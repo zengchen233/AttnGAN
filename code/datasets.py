@@ -79,7 +79,7 @@ def get_imgs(img_path, imsize, bbox=None,
     else:
         for i in range(cfg.TREE.BRANCH_NUM):
             # print(imsize[i])
-            if i < (cfg.TREE.BRANCH_NUM - 1):
+            if i < (cfg.TREE.BRANCH_NUM - 2):
                 re_img = transforms.Resize(imsize[i])(img)
             else:
                 re_img = img
